@@ -1,0 +1,164 @@
+📖 Kegiatan 1 – Mengenal Tag
+Kode:
+
+html
+<h3 class="destination-title">Pantai Kuta</h3>
+Tag: <h3>
+
+Class: destination-title
+
+Tulisan yang ditampilkan: Pantai Kuta
+
+Fungsi tag <h3>: Membuat judul/subjudul dengan ukuran heading tingkat 3.
+
+Kalimat Presentasi:
+“Tag <h3> digunakan untuk menampilkan judul atau subjudul karena heading membantu memberi struktur dan hierarki pada halaman web.”
+
+🔎 Kegiatan 2 – Mencari Tag pada Website SIWA
+No	Tag yang Ditemukan	Contoh Penggunaan	Fungsi Tag
+1	<h2>	<h2>Destinasi Wisata</h2>	Membuat judul utama
+2	<p>	<p>Selamat datang di SIWA</p>	Menampilkan paragraf teks
+3	<img>	<img src="assets/images/kuta.jpg">	Menampilkan gambar
+4	<nav>	<nav>...</nav>	Membuat menu navigasi
+5	<footer>	<footer>Alamat & kontak</footer>	Bagian bawah halaman
+
+
+Presentasi:
+
+Tag pertama: <h2> → Fungsinya membuat judul utama.
+
+Tag kedua: <img> → Fungsinya menampilkan gambar.
+
+🟡 Kegiatan 3 – Mengenal Atribut
+Kode:
+
+html
+<img src="assets/images/kuta.jpg" alt="Pantai Kuta" class="destination-image">
+Atribut src: assets/images/kuta.jpg
+
+Atribut alt: Pantai Kuta
+
+Atribut class: destination-image
+
+Fungsi:
+
+src → Menentukan lokasi file gambar.
+
+alt → Menampilkan teks alternatif jika gambar tidak muncul.
+
+class → Memberikan identitas untuk styling CSS.
+
+Kalimat Presentasi:
+“Pada kode <img> terdapat beberapa atribut, yaitu src, alt, dan class. Atribut src digunakan untuk menampilkan gambar, sedangkan alt digunakan untuk memberi teks alternatif.”
+
+🔵 Kegiatan 4 – Mengenal Class
+Kode:
+
+html
+<h3 class="destination-title">Pantai Kuta</h3>
+Tag: <h3>
+
+Class: destination-title
+
+Isi tulisan: Pantai Kuta
+
+Contoh Class di SIWA:
+
+destination-title → Judul destinasi
+
+destination-image → Gambar destinasi
+
+destination-text → Deskripsi destinasi
+
+nav-menu → Menu navigasi
+
+footer-info → Informasi di footer
+
+Presentasi:
+Nama class: destination-image  
+Digunakan pada: gambar destinasi wisata
+Menurut kelompok kami, class tersebut digunakan untuk memberi gaya khusus pada gambar agar tampil rapi.
+
+🟣 Kegiatan 5 – Tag dan Class
+Kode A	Kode B
+Tag	<h2>	<h3>
+Class	section-title	destination-title
+Isi	Destinasi Wisata	Pantai Kuta
+
+
+Diskusi:
+
+Tag sama? → ❌ Tidak
+
+Class sama? → ❌ Tidak
+
+Perbedaan: Tag adalah elemen HTML untuk struktur konten, sedangkan class adalah identitas untuk styling CSS.
+
+Kalimat Presentasi:
+“Menurut kelompok kami, tag adalah elemen HTML untuk membuat struktur konten, sedangkan class adalah nama yang digunakan untuk memberi gaya melalui CSS.”
+
+💻 Kegiatan 6 – Praktik Mengubah Kode
+Kode awal:
+
+html
+<h3 class="destination-title">Pantai Kuta</h3>
+Ubah menjadi:
+
+html
+<h3 class="destination-title">Gunung Merapi</h3>
+Pertanyaan:
+
+Bagian yang diubah → Isi tulisan dari “Pantai Kuta” menjadi “Gunung Merapi”.
+
+Tag <h3> ikut berubah? → ❌ Tidak
+
+Class ikut berubah? → ❌ Tidak
+
+Presentasi:
+“Pada praktik ini, kami mengubah tulisan ‘Pantai Kuta’ menjadi ‘Gunung Merapi’. Tag yang digunakan tetap <h3> dan class yang digunakan tetap destination-title.”
+
+🧩 Kegiatan 7 – Cari Kesalahan Kode
+Kode salah:
+
+html
+<h3 class="destination-title">Gunung Bromo<h3>
+Kesalahan: Tag penutup salah, harus </h3>.
+
+Perbaikan:
+
+html
+<h3 class="destination-title">Gunung Bromo</h3>
+Presentasi:
+“Kode tersebut salah karena tidak menutup tag dengan benar. Perbaikannya adalah menggunakan </h3>.”
+
+🏆 Kegiatan 8 – Tugas Kelompok
+Contoh kode:
+
+html
+<h3 class="destination-title">Candi Borobudur</h3>
+<p class="destination-text">Candi Borobudur adalah candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+🎤 Kegiatan 9 – Siapkan Presentasi
+1️⃣ Tag  
+Tag yang kami pelajari: <h2>, <h3>, <p>, <img>, <nav>  
+Fungsinya: Membuat struktur konten website.
+
+2️⃣ Atribut  
+Atribut yang kami temukan: src, alt, class  
+Fungsinya: Memberi informasi tambahan pada tag.
+
+3️⃣ Class  
+Class yang kami pelajari: destination-title, destination-image, destination-text  
+Digunakan untuk: Memberi gaya CSS pada elemen.
+
+4️⃣ Perubahan Kode  
+Kode yang kami ubah: <h3 class="destination-title">Pantai Kuta</h3>  
+Perubahannya menjadi: <h3 class="destination-title">Gunung Merapi</h3>
+
+5️⃣ Kesimpulan  
+Menurut kelompok kami:
+
+Tag adalah elemen HTML untuk struktur konten.
+
+Class adalah identitas untuk styling CSS.
+
+Perbedaan: Tag membentuk struktur, class memberi gaya.

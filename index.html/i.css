@@ -1,0 +1,292 @@
+/*=========================================
+SIWA
+Sistem Informasi Wisata Indonesia
+Sprint 2 - CSS
+Versi: 1.3.0
+Episode 13: Menghubungkan CSS
+=========================================*/
+
+/*=========================================
+RESET CSS
+=========================================*/
+
+/*=========================================
+TYPOGRAPHY & BASE
+=========================================*/
+body {
+    /* Menghapus celah bawaan browser */
+    margin: 0;
+    padding: 0;
+    
+    /* Tipografi & Fallback Stack */
+    font-family:cursive;
+    /* Warna Latar & Teks (Ergonomis/UX Friendly) */
+    background-color: #f5f7fa;
+    color: #333333; /* Dark Grey (bukan hitam murni) */
+}
+
+/*=========================================
+HEADER
+=========================================*/
+.header {
+    background-color: #0f4c81; /* Biru Tua Elegan */
+    padding: 30px 20px; /* Atas-Bawah 30px, Kiri-Kanan 20px */
+    text-align: center; /* Rata Tengah */
+}
+.logo {
+    width: 80px;
+    height: auto; /* BEST PRACTICE: Menjaga aspect ratio */
+}
+.site-title {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #ffffff; /* Putih — kontras tinggi di atas biru tua */
+}
+.site-tagline {
+    margin: 0;
+    font-size: 16px;
+    color: #dbeafe; /* Biru sangat muda — soft contrast */
+}
+
+
+/*=========================================
+NAVIGATION
+=========================================*/
+/* Wadah navigasi: biru lebih gelap agar beda dari header */
+.navbar {
+    background-color: #083358;
+    padding: 15px 20px;
+}
+/* Induk daftar: normalisasi + FLEXBOX */
+.nav-list {
+    list-style: none;       /* Hapus bullet bawaan */
+    margin: 0;              /* Reset margin bawaan */
+    padding: 0;             /* Reset padding bawaan */
+    display: flex;          /* 🪄 SAKLAR UTAMA FLEXBOX! */
+    justify-content: center; /* Ratakan menu ke tengah */
+    gap: 30px;              /* Jarak antar menu (presisi) */
+}
+/* Item navigasi */
+.nav-item {
+    display: inline-block;
+}
+/* Tautan menu */
+.nav-link {
+    color: white;
+    text-decoration: none;   /* Hapus garis bawah bawaan */
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;        /* ✨ Animasi halus micro-interaction */
+}
+/* Efek hover: kuning hangat (complementary contrast) */
+.nav-link:hover {
+    color: #ffd166;
+}
+
+
+/*=========================================
+HERO SECTION eps17
+=========================================*/
+.hero {
+    display: flex;              /* Layout dua kolom */
+    align-items: center;      /* Sejahtara vertikal */
+    justify-content: space-between; /* Ruang di antara */
+    gap: 40px;                /* Jarak antar kolom */
+    padding: 60px 8%;         /* Ruang dalam (atas-bawah 60px, kiri-kanan 8%) */
+    background-color: #eaf4ff; /* Biru sangat muda */
+}
+.hero-content {
+    flex: 1; /* 50% ruang — kolom kiri */
+}
+
+.hero-image {
+    flex: 1; /* 50% ruang — kolom kanan */
+}
+.hero-img {
+    width: 100%;        /* Ikuti lebar wadah */
+    height: auto;       /* Jaga rasio — ANTI GEPENG! */
+    border-radius: 12px; /* Sudut membulat modern */
+}
+.hero-title {
+    font-size: 42px;       /* Hierarki visual utama */
+    margin-bottom: 20px;
+    color: #0f4c81;         /* Biru tua */
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;       /* Keterbacaan nyaman */
+    margin-bottom: 25px;
+}
+.hero-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0f4c81;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Kursor berubah jadi tangan */
+}
+
+.hero-button:hover {
+    background-color: #083358; /* Efek hover */
+}
+
+
+/*=========================================
+DESTINASI WISATA css grid eps18
+=========================================*/
+.destination {
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+.destination-list {
+    display: grid;  /* 🪄 SAKLAR UTAMA CSS GRID! */
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolom fleksibel */
+    gap: 30px;                          /* Jarak antar card */
+}
+.destination-card {
+    background-color: #ffffff;
+    border-radius: 12px;          /* Sudut membulat */
+    overflow: hidden;             /* Cegah konten bocor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;              /* Animasi halus */
+}
+
+.destination-card:hover {
+    transform: translateY(-4px);     /* Card "terangkat" */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Shadow lebih dalam */
+}
+.destination-image {
+    width: 100%;
+    height: 220px;              /* Tinggi seragam */
+    object-fit: cover;         /* 🛡️ PENYELAMAT GAMBAR CARD! */
+}
+.destination-title {
+    font-size: 22px;
+    margin: 16px 20px 8px;
+    color: #0f4c81;
+}
+
+.destination-text {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 20px 16px;
+    color: #64748b;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 10px 20px;
+    background-color: #0f4c81;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #083358;
+}
+
+
+/*=========================================
+MEDIA WISATA epss  20
+=========================================*/
+.media {
+    padding: 60px 8%;          /* Konsisten dengan Destinasi */
+    background-color: #f5f7fa;   /* Konsisten dengan body */
+}
+.media {
+    padding: 60px 8%;          /* Konsisten dengan Destinasi */
+    background-color: #f5f7fa;   /* Konsisten dengan body */
+}
+/* Kartu media — DESIGN SYSTEM KONSISTEN */
+.media-audio,
+.media-video,
+.media-map {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;             /* Sama dengan Destinasi! */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sama dengan Destinasi! */
+}
+
+.media-audio h3,
+.media-video h3,
+.media-map h3 {
+    color: #0f4c81;                  /* Sama dengan Destinasi! */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.audio-player {
+    width: 100% /* memenuhi lebar kartu */
+}
+.vidio-player {
+    width: 100%;
+    height: auto; /*Jaga rasio aspek — ANTI GEPENG!*/
+    border-radius: 10px;  /* Sudut membulat */
+}
+.map-frame {
+    width: 100%;
+    height: 350px; /* Tinggi tetap — iframe tidak punya rasio */
+    border: none;   /* Hapus border bawaan iframe */
+    border-radius: 10px;   /* Sudut membulat */
+}
+/*=========================================
+KONTAK epps 21
+=========================================*/
+.contact {
+    padding: 60px 10&;/* Konsisten dengan section lain */
+    background-color:white; /* Latar putih */
+}
+.contact-content {
+    display: flex;              /* 🪄 SAKLAR UTAMA FLEXBOX! */
+    justify-content: center;  /* Kartu di tengah */
+    align-items: stretch;      /* Tinggi sama */
+    gap: 30px;                 /* Jarak napas */
+    margin-top: 40px;           /* Jarak dari judul */
+}
+.contact-address,
+.contact-phone,
+.contact-email,
+.contact-hours {
+    flex: 1;                   /* 🎯 Pembagian ruang ADIL */
+    margin: 0;
+    padding: 25px;
+    background-color: #f5f7fa; /* Konsisten Design System */
+    border-radius: 12px;      /* Konsisten Design System */
+    text-align: center;
+    line-height: 1.6;          /* Kenyamanan baca */
+}
+/* ===== LINK STYLING (Telepon & Email) ===== */
+.contact-phone a,
+.contact-email a {
+    color: #0f4c81;          /* Warna tema SIWA */
+    text-decoration: none;  /* Hapus underline bawaan */
+    font-weight: bold;        /* Tebalkan agar menonjol */
+}
+
+.contact-phone a:hover,
+.contact-email a:hover {
+    color: #083358;          /* Biru lebih gelap saat hover */
+    text-decoration: underline; /* Underline muncul saat hover */
+}
+
+/*=========================================
+INFORMASI WISATA (TABLE)
+=========================================*/
+
+/*=========================================
+INFORMASI TAMBAHAN (LIST)
+=========================================*/
+
+/*=========================================
+FORM PEMESANAN
+=========================================*/
+
+/*=========================================
+FOOTER
+=========================================*/
